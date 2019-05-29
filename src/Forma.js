@@ -17,7 +17,7 @@ let Forma = {};
     };
 
     Forma.checkTypes = function (checkData, typeToAssert) {
-        if (checkData == typeToAssert) return true;
+        if (this.getTypes(checkData) == typeToAssert) return true;
 
         return false;
     };
